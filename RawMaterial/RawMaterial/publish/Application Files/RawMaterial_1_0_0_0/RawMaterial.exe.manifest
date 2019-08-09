@@ -1,0 +1,180 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly manifestVersion="1.0" xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1">
+  <asmv1:assemblyIdentity version="1.0.0.0" name="RawMaterial.exe" publicKeyToken="5349e3eb86aaeaea" language="neutral" processorArchitecture="x86" type="win32" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="RawMaterial" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
+    <commandLine file="RawMaterial.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet version="1" class="System.Security.NamedPermissionSet" Name="LocalIntranet" Description="Default rights given to applications on the local intranet" Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!-- UAC Manifest Options
+            If you want to change the Windows User Account Control level replace the 
+            requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+            Specifying requestedExecutionLevel node will disable file and registry virtualization.
+            If you want to utilize File and Registry Virtualization for backward 
+            compatibility then delete the requestedExecutionLevel node.
+        -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="DJLib.dll" size="17920">
+      <assemblyIdentity name="DJLib" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>PvA2/vw8GKHbuEUhSpAY/JN6L64=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Mono.Security.dll" size="282624">
+      <assemblyIdentity name="Mono.Security" version="2.0.0.0" publicKeyToken="0738EB9F132ED756" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>IC2LVnZ9QzyF3tgHAyy46u8orM4=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Npgsql.dll" size="388608">
+      <assemblyIdentity name="Npgsql" version="2.0.9.0" publicKeyToken="5D8B90D52F46FDA7" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>WusqMu7UnPPXpMEsN1b46T58lyU=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="de\Npgsql.resources.dll" size="17920">
+      <assemblyIdentity name="Npgsql.resources" version="2.0.9.0" publicKeyToken="5D8B90D52F46FDA7" language="de" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>m8trN533oGQC4pEyxTp+amk8+oo=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="es\Npgsql.resources.dll" size="9728">
+      <assemblyIdentity name="Npgsql.resources" version="2.0.9.0" publicKeyToken="5D8B90D52F46FDA7" language="es" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>SXvroZWPfc7Cw+dkQrFh1jjjbUU=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="fi\Npgsql.resources.dll" size="9216">
+      <assemblyIdentity name="Npgsql.resources" version="2.0.9.0" publicKeyToken="5D8B90D52F46FDA7" language="fi" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>iauipIUc0H3l9lJYuzlvPlRa+Vw=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="fr\Npgsql.resources.dll" size="17920">
+      <assemblyIdentity name="Npgsql.resources" version="2.0.9.0" publicKeyToken="5D8B90D52F46FDA7" language="fr" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>e4ZwA32ywF2H3waWSLBswOSgPJI=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ja\Npgsql.resources.dll" size="18432">
+      <assemblyIdentity name="Npgsql.resources" version="2.0.9.0" publicKeyToken="5D8B90D52F46FDA7" language="ja" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>gxnSY89B4ICGSn1mmKGr68niVqI=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="zh-CN\Npgsql.resources.dll" size="16384">
+      <assemblyIdentity name="Npgsql.resources" version="2.0.9.0" publicKeyToken="5D8B90D52F46FDA7" language="zh-CN" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>G2AtkI3FnlFpsf1gEoa6ZfMQEmc=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="RawMaterial.exe" size="93184">
+      <assemblyIdentity name="RawMaterial" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>3jkRYy9E1UsJP+itVi4uK3HmUTI=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="RawMaterial.exe.config" size="1534">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>O/VdrwZyCdYqpJxkCXAlhM9qn1I=</dsig:DigestValue>
+    </hash>
+  </file>
+  <compatibility xmlns="urn:schemas-microsoft-com:compatibility.v1">
+    <application>
+      <!-- A list of all Windows versions that this application is designed to work with. Windows will automatically select the most compatible environment.-->
+      <!-- If your application is designed to work with Windows 7, uncomment the following supportedOS node-->
+      <!--<supportedOS Id="{35138b9a-5d96-4fbd-8e2d-a2440225f93a}"/>-->
+    </application>
+  </compatibility>
+<publisherIdentity name="CN=AS\dlie" issuerKeyHash="488b59702048dec1426c7d9cfc07588a26d4c22e" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>HWZ50we/sxghcTUEodkG2PiDKMc=</DigestValue></Reference></SignedInfo><SignatureValue>JC5YEDrG6aYQBR3GmjYGXDR2xU/TRUd05ZChFKrUhNR7/Bo4sLimPNxny3de3efQKVa+ovp0kGwDwCJ/a/0kwFPdWuEz6MTDVjmw0I0M4/1Gqf1esOX3z0xH5m44mnMGA8THyW/V+8A3PSXoykONLMJPKY6aDyx/4JZTZaZKGYg=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>tDTSpQQoWwMzC4+t8ep/GuqEMVt+DBuOoJBFUzDV9sR95/5YTFwTa44AZJ7mjv6rZeu7r3SmcmVYerVkYAmUEcrPpv+I9NTkRlrnoJZWdh1L3XHJmreCPHwfHTA/cf+0zqyGZUf7brRXTbrS8XMkgE/lWb7MpN9eotI49/ROP9s=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="c72883f8d806d9a10435712118b3bf07d379661d" Description="" Url=""><as:assemblyIdentity version="1.0.0.0" name="RawMaterial.exe" publicKeyToken="5349e3eb86aaeaea" language="neutral" processorArchitecture="x86" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=AS\dlie</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>o3LXO+4Yl0oDFWFbuiqKFF2HeNc=</DigestValue></Reference></SignedInfo><SignatureValue>A0iwoiv9EkEy9iVrurjvEwc1gFiBFQGV4JmfKZy3Sei5srfISdgvjwlaYpcNAMsVZwscxzzDjNA2XBXR8KtEXaPYPXC+JQMVkoXBDlyQBq78cO7ePE9JPU3igc7edDvBTTY5ifHgsLtxRBza0L3gmpJzArA4cxU6Hkk2mc0T1lQ=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>tDTSpQQoWwMzC4+t8ep/GuqEMVt+DBuOoJBFUzDV9sR95/5YTFwTa44AZJ7mjv6rZeu7r3SmcmVYerVkYAmUEcrPpv+I9NTkRlrnoJZWdh1L3XHJmreCPHwfHTA/cf+0zqyGZUf7brRXTbrS8XMkgE/lWb7MpN9eotI49/ROP9s=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIBrTCCARqgAwIBAgIQaQL8L56plJRAhWbgGjryHDAJBgUrDgMCHQUAMBkxFzAVBgNVBAMeDgBBAFMAXABkAGwAaQBlMB4XDTEwMDgwNTA1NTA0MloXDTExMDgwNTExNTA0MlowGTEXMBUGA1UEAx4OAEEAUwBcAGQAbABpAGUwgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBALQ00qUEKFsDMwuPrfHqfxrqhDFbfgwbjqCQRVMw1fbEfef+WExcE2uOAGSe5o7+q2Xru690pnJlWHq1ZGAJlBHKz6b/iPTU5EZa56CWVnYdS91xyZq3gjx8Hx0wP3H/tM6shmVH+260V0260vFzJIBP5Vm+zKTfXqLSOPf0Tj/bAgMBAAEwCQYFKw4DAh0FAAOBgQADka8iXqayYElqETEfg3bgdDtOEWg+VKImCH2wQopbt+dtEoMizS+bANcvoCbq5sCWISpgllIOAcop49EaIiqnN9WOIWjk6RwYp5OWlDbVly3BVh5hdK+/HmyZnhij+KQvR0R+28mMuXLCtn64A4ma6UtHGJssAGcfoI/O0uk13w==</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>

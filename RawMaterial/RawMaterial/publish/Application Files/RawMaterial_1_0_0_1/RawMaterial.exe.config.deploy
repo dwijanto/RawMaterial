@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<configuration>
+    <configSections>
+        <sectionGroup name="userSettings" type="System.Configuration.UserSettingsGroup, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" >
+            <section name="RawMaterial.My.MySettings" type="System.Configuration.ClientSettingsSection, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" allowExeDefinition="MachineToLocalUser" requirePermission="false" />
+        </sectionGroup>
+    </configSections>
+    <connectionStrings>
+        <add name="RawMaterial.My.MySettings.ConnectionString1" connectionString="Host=localhost;Port=5432;database=mydb" />
+    </connectionStrings>
+    <system.diagnostics>
+        <sources>
+            <!-- This section defines the logging configuration for My.Application.Log -->
+            <source name="DefaultSource" switchName="DefaultSwitch">
+                <listeners>
+                    <add name="FileLog"/>
+                    <!-- Uncomment the below section to write to the Application Event Log -->
+                    <!--<add name="EventLog"/>-->
+                </listeners>
+            </source>
+        </sources>
+        <switches>
+            <add name="DefaultSwitch" value="Information" />
+        </switches>
+        <sharedListeners>
+            <add name="FileLog"
+                 type="Microsoft.VisualBasic.Logging.FileLogTraceListener, Microsoft.VisualBasic, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL"
+                 initializeData="FileLogWriter"/>
+            <!-- Uncomment the below section and replace APPLICATION_NAME with the name of your application to write to the Application Event Log -->
+            <!--<add name="EventLog" type="System.Diagnostics.EventLogTraceListener" initializeData="APPLICATION_NAME"/> -->
+        </sharedListeners>
+    </system.diagnostics>
+    <userSettings>
+        <RawMaterial.My.MySettings>
+            <setting name="dbProviderFactory" serializeAs="String">
+                <value>Npgsql</value>
+            </setting>
+            <setting name="ImportExcelFolder" serializeAs="String">
+                <value>d:\_DataCapture\New</value>
+            </setting>
+            <setting name="SuccessFolder" serializeAs="String">
+                <value>d:\_DataCapture\Success</value>
+            </setting>
+            <setting name="ErrorFolder" serializeAs="String">
+                <value>d:\_DataCapture\Error</value>
+            </setting>
+            <setting name="tmpFolder" serializeAs="String">
+                <value>d:\_DataCapture\Tmp</value>
+            </setting>
+        </RawMaterial.My.MySettings>
+    </userSettings>
+</configuration>

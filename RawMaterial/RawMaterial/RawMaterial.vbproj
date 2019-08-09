@@ -1,0 +1,412 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F2435115-7F9E-40FC-9EDF-36940716D547}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>RawMaterial.My.MyApplication</StartupObject>
+    <RootNamespace>RawMaterial</RootNamespace>
+    <AssemblyName>RawMaterial</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>40</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>RawMaterial.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>RawMaterial.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>A2713C03484607F3E559A2C9292AFF03AC6467D5</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>RawMaterial_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>myapp003.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="npgsql, Version=2.1.3.0, Culture=neutral, PublicKeyToken=5d8b90d52f46fda7, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Package\npgsql.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Class\DbAdapter.vb" />
+    <Compile Include="Class\misc.vb" />
+    <Compile Include="FormAbout.Designer.vb">
+      <DependentUpon>FormAbout.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormAbout.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Chart1.Designer.vb">
+      <DependentUpon>Chart1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Chart1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Chart2.Designer.vb">
+      <DependentUpon>Chart2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Chart2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CustomFormat\crcyChart.Designer.vb">
+      <DependentUpon>crcyChart.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CustomFormat\crcyChart.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CustomFormat\DataGridRM.Designer.vb">
+      <DependentUpon>DataGridRM.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CustomFormat\DataGridRM.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CustomFormat\MyChart.Designer.vb">
+      <DependentUpon>MyChart.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CustomFormat\MyChart.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CustomFormat\RMCrcy.Designer.vb">
+      <DependentUpon>RMCrcy.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CustomFormat\RMCrcy.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CustomFormat\seriesSelection.Designer.vb">
+      <DependentUpon>seriesSelection.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CustomFormat\seriesSelection.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FormCurrency.Designer.vb">
+      <DependentUpon>FormCurrency.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormCurrency.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDownloadCurrency.Designer.vb">
+      <DependentUpon>FormDownloadCurrency.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormDownloadCurrency.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDownloadOptions.Designer.vb">
+      <DependentUpon>FormDownloadOptions.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormDownloadOptions.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormImportCurrency.Designer.vb">
+      <DependentUpon>FormImportCurrency.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormImportCurrency.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormImportRawMaterial.Designer.vb">
+      <DependentUpon>FormImportRawMaterial.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormImportRawMaterial.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMenu.Designer.vb">
+      <DependentUpon>FormMenu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormMenu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLogin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLogin.Designer.vb">
+      <DependentUpon>FormLogin.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormRawMaterial.Designer.vb">
+      <DependentUpon>FormRawMaterial.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormRawMaterial.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormRawMaterialCTNew.Designer.vb">
+      <DependentUpon>FormRawMaterialCTNew.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormRawMaterialCTNew.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GlobalVarMod.vb" />
+    <Compile Include="Class\KeysClass.vb" />
+    <Compile Include="Module1.vb" />
+    <Compile Include="Chart3.Designer.vb">
+      <DependentUpon>Chart3.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Chart3.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Class\SBClass.vb" />
+    <Compile Include="TabSelection.Designer.vb">
+      <DependentUpon>TabSelection.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TabSelection.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="FormAbout.resx">
+      <DependentUpon>FormAbout.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Chart1.resx">
+      <DependentUpon>Chart1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Chart2.resx">
+      <DependentUpon>Chart2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomFormat\crcyChart.resx">
+      <DependentUpon>crcyChart.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomFormat\DataGridRM.resx">
+      <DependentUpon>DataGridRM.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomFormat\MyChart.resx">
+      <DependentUpon>MyChart.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomFormat\RMCrcy.resx">
+      <DependentUpon>RMCrcy.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomFormat\seriesSelection.resx">
+      <DependentUpon>seriesSelection.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCurrency.resx">
+      <DependentUpon>FormCurrency.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDownloadCurrency.resx">
+      <DependentUpon>FormDownloadCurrency.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDownloadOptions.resx">
+      <DependentUpon>FormDownloadOptions.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormImportCurrency.resx">
+      <DependentUpon>FormImportCurrency.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormImportRawMaterial.resx">
+      <DependentUpon>FormImportRawMaterial.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMenu.resx">
+      <DependentUpon>FormMenu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLogin.resx">
+      <DependentUpon>FormLogin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormRawMaterial.resx">
+      <DependentUpon>FormRawMaterial.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Chart3.resx">
+      <DependentUpon>Chart3.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormRawMaterialCTNew.resx">
+      <DependentUpon>FormRawMaterialCTNew.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="My Project\app.manifest" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="RawMaterial_TemporaryKey.pfx" />
+    <EmbeddedResource Include="TabSelection.resx">
+      <DependentUpon>TabSelection.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\ChartTemplate.xltx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\RawDataTemplate.xltx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\ChartCurrencyTemplate.xltx" />
+    <EmbeddedResource Include="Templates\MultiSeriesTemplate.xltx" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0,Profile=Client">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 Client Profile %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\DJLib\DJLib.vbproj">
+      <Project>{744C93D1-44E9-4678-9315-25634864A836}</Project>
+      <Name>DJLib</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>4</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.Excel">
+      <Guid>{00020813-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>9</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="myapp003.ico" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

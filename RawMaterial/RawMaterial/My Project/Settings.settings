@@ -1,0 +1,37 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="My" GeneratedClassName="MySettings" UseMySettingsClassName="true">
+  <Profiles />
+  <Settings>
+    <Setting Name="dbProviderFactory" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Npgsql</Value>
+    </Setting>
+    <Setting Name="ImportExcelFolder" Type="System.String" Scope="User">
+      <Value Profile="(Default)">d:\_DataCapture\New</Value>
+    </Setting>
+    <Setting Name="SuccessFolder" Type="System.String" Scope="User">
+      <Value Profile="(Default)">d:\_DataCapture\Success</Value>
+    </Setting>
+    <Setting Name="ErrorFolder" Type="System.String" Scope="User">
+      <Value Profile="(Default)">d:\_DataCapture\Error</Value>
+    </Setting>
+    <Setting Name="tmpFolder" Type="System.String" Scope="User">
+      <Value Profile="(Default)">d:\_DataCapture\Tmp</Value>
+    </Setting>
+    <Setting Name="ConnectionString1" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionString&gt;host=localhost;port=5432;database=LogisticDb&lt;/ConnectionString&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">host=localhost;port=5432;database=LogisticDb</Value>
+    </Setting>
+    <Setting Name="live" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Host=Hon03nt;Port=5432;database=LogisticDb</Value>
+    </Setting>
+    <Setting Name="dev" Type="System.String" Scope="User">
+      <Value Profile="(Default)">host=localhost;port=5432;database=LogisticDb20111219</Value>
+    </Setting>
+    <Setting Name="dev2" Type="System.String" Scope="User">
+      <Value Profile="(Default)">host=localhost;port=5432;database=dbtest20120513</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

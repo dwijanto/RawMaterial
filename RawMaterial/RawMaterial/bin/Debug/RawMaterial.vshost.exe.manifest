@@ -53,14 +53,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="DJLib.dll" size="108544">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="DJLib.dll" size="126464">
       <assemblyIdentity name="DJLib" version="1.0.0.1" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>F38hrpLhhjnaGeOqRKVz83UJRf0=</dsig:DigestValue>
+        <dsig:DigestValue>Icg7oNszB+7JzmMhmGDG631xk6w=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -77,14 +77,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="RawMaterial.exe" size="1394176">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="RawMaterial.exe" size="1418752">
       <assemblyIdentity name="RawMaterial" version="1.0.0.38" language="neutral" processorArchitecture="x86" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>8YL6Lx4hxg5WQ4ujHIUs8s/nGuk=</dsig:DigestValue>
+        <dsig:DigestValue>W12KF+Pc6Xho9V+ittsLlEa2YP0=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
